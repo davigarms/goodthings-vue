@@ -1,47 +1,83 @@
 <template>
-  <Header/>
-  <Banner/>
-  <About/>
-  <How/>
-  <What/>
+  <Header />
+  <Banner />
+  <About />
+  <How />
+  <What v-bind:whats="whats"/>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Banner from './components/Banner.vue'
-import About from './components/About.vue'
-import How from './components/How.vue'
-import What from './components/What.vue'
+  import Header from './components/Header.vue'
+  import Banner from './components/Banner.vue'
+  import About from './components/About.vue'
+  import How from './components/How.vue'
+  import What from './components/What.vue'
 
-export default {
-  name: 'App',
-  components: {
-    Header,
-    Banner,
-    About,
-    How,
-    What
+  export default {
+    name: 'App',
+    components: {
+      Header,
+      Banner,
+      About,
+      How,
+      What
+    },
+    data() {
+      return {
+        whats: [
+          {
+            id: 1,
+            title: "Get online week",
+            text: "Lorem ipsum",
+            link: "http://"
+          },
+          {
+            id: 2,
+            title: "Learn my way",
+            text: "Lorem ipsum",
+            link: "http://"
+          },
+          {
+            id: 3,
+            title: "Make it click",
+            text: "Lorem ipsum",
+            link: "http://"
+          },
+          {
+            id: 4,
+            title: "Digital you",
+            text: "Lorem ipsum",
+            link: "http://"
+          }
+        ]
+      }
+    }
   }
-}
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-#app {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #333;
-  background-color: #ddd;
-  padding-bottom: 107px;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
-body {
+  * {
+    box-sizing: border-box;
+  }
+
+  #app {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333;
+    background-color: #ddd;
+    padding-bottom: 107px;
+  }
+
+  body {
     margin: 0;
     padding: 0;
-}
+  }
 
-header, section {
+  header,
+  section {
     width: 100%;
     max-width: 1058px;
     margin: 0 auto;
@@ -49,20 +85,21 @@ header, section {
     background-color: #fff;
     position: relative;
     top: 107px;
-}
+  }
 
-.container {
+  .container {
     width: 100%;
     max-width: 940px;
     margin: 0 auto;
-}
+  }
 
-h2, h3 {
-  font-weight: 600;
-}
+  h2,
+  h3 {
+    font-weight: 600;
+  }
 
-/* buttons */
-button {
+  /* buttons */
+  button {
     position: relative;
     background: none;
     border: none;
@@ -70,54 +107,57 @@ button {
     font-weight: 600;
     font-size: 13px;
     line-height: 13px;
-}
+  }
 
-button.rounded {
+  button.rounded {
     border-radius: 20px;
-}
+  }
 
-    button.contained {
-        background-color: #ccc;
-        color: #222222;
-    }
-        button.contained.primary {
-            background-color: #be3249;
-            color: #fff;
-        }
+  button.contained {
+    background-color: #ccc;
+    color: #222222;
+  }
 
-        button.contained.secondary {
-            background-color: #fff;
-            color: #be3249;
-        }
+  button.contained.primary {
+    background-color: #be3249;
+    color: #fff;
+  }
 
-    button.outlined {
-        border: 1px solid #ccc;
-    }
-        button.outlined.primary {
-            border: 1px solid #be3249;
-            color: #be3249;
-        }
+  button.contained.secondary {
+    background-color: #fff;
+    color: #be3249;
+  }
 
-        button.outlined.secondary {
-            border: 1px solid #fff;
-            color: #fff;
-        }
+  button.outlined {
+    border: 1px solid #ccc;
+  }
 
-    button.underlined {
-        border-left: 1px #ccc solid;
-    }
-        button.underlined:after {
-            content: "";
-            background-color: #ccc;
-            position: absolute;
-            width: 100%;
-            height: 3px;
-            bottom: 0;
-            left: 0;
-        }
-            button.underlined.secondary:after {
-                background-color: #3b7e71;
-                color: #3b7e71;
-            }
+  button.outlined.primary {
+    border: 1px solid #be3249;
+    color: #be3249;
+  }
 
+  button.outlined.secondary {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+
+  button.underlined {
+    border-left: 1px #ccc solid;
+  }
+
+  button.underlined:after {
+    content: "";
+    background-color: #ccc;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+  }
+
+  button.underlined.secondary:after {
+    background-color: #3b7e71;
+    color: #3b7e71;
+  }
 </style>
