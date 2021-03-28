@@ -25,22 +25,22 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.banner .img {
+.img {
     line-height: 0;
 }
-    .banner .img img {
+    .img img {
         width: 100%;
         display: block;
     }
 
-.banner .container {
+.container {
     position: absolute;
     width: initial;
     top: 61px;
     left: 59px;
 }
 
-.banner .container h2 {
+h2 {
     color: #fff;
     font-size: 56px;
     padding: 10px 15px 15px;
@@ -48,7 +48,7 @@ export default {
     margin: 0;
 }
 
-.banner .container p {
+p {
     margin: 16px 0;
     color: #497c8f;
     background-color: #fff;

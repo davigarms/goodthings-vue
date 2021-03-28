@@ -28,46 +28,46 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-@media screen and (max-width: 779px) {
-    .about .img img {
-        width: 100%;
-    }
-}
-
 .about {
     display: flex;
     flex-wrap: wrap;
 }
-    .about div {
-        flex: 1 1 360px;
-        height: 265px;
-        min-height: 265px;
-        overflow: hidden;
-    }
 
-    .about .content {
-        color: #fff;
-        padding: 0 30px;
-        background-color: #478175;
-    }
+div {
+    flex: 1 1 360px;
+    height: 265px;
+    min-height: 265px;
+    overflow: hidden;
+}
 
-    .about .content h2 {
-        margin: 15px 0 0;
-        font-size: 23px;
-        line-height: 1.3;
-        font-weight: 600;
-        padding: 0 70px 0 0;
-    }
+.content {
+    color: #fff;
+    padding: 0 30px;
+    background-color: #478175;
+}
 
-    .about .content p {
-        margin: 10px 0 0;
-        font-size: 16px;
-        line-height: 1.5;
-        padding: 0 80px 0 0;
-    }
+h2 {
+    margin: 15px 0 0;
+    font-size: 23px;
+    line-height: 1.3;
+    font-weight: 600;
+    padding: 0 70px 0 0;
+}
 
-    .about .content button {
-        margin-top: 17px;
+p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 80px 0 0;
+}
+
+button {
+    margin-top: 17px;
+}
+
+@media screen and (max-width: 779px) {
+    img {
+        width: 100%;
     }
+}
 </style>

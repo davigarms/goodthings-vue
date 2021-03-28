@@ -35,8 +35,4 @@
   p {
     color: #222;
   }
-
-  .call {
-    text-align: center;
-  }
 </style>

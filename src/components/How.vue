@@ -36,28 +36,30 @@ export default {
 .how {
     padding: 48px 0;
 }
-    .how h2 {
-        margin-top: 0;
-        font-size: 26px;
-    }
-    .how p {
-        font-size: 17px;
-    }
 
-    .how .howform {
-        text-align: center;
+h2 {
+    margin-top: 0;
+    font-size: 26px;
+}
+
+p {
+    font-size: 17px;
+}
+
+.howform {
+    text-align: center;
+    font-size: 23px;
+    margin: 40px 0 0;
+}
+    .howform select {
+        border: none;
+        border-bottom: 2px solid #497c8f;
         font-size: 23px;
-        margin: 40px 0 0;
+        color: #497c8f;
+        margin: 0 10px;
     }
-        .how .howform select {
-            border: none;
-            border-bottom: 2px solid #497c8f;
-            font-size: 23px;
-            color: #497c8f;
-			margin: 0 10px;
-        }
 
-        .how .howform button {
-            margin-left: 20px;
-        }
+    .howform button {
+        margin-left: 20px;
+    }
 </style>
