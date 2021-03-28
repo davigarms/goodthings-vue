@@ -9,7 +9,7 @@
         {{banners[0].text}}
       </p>
       <button class="contained rounded secondary">
-        <a href="">Get involved now!</a>
+        <a :href="banners[0].link">Get involved now!</a>
       </button>
     </div>
   </section>

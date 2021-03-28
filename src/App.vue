@@ -93,11 +93,6 @@
     top: 107px;
   }
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
   .container {
     width: 100%;
     max-width: 940px;
@@ -109,16 +104,30 @@
     font-weight: 600;
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   /* buttons */
   button {
     position: relative;
     background: none;
     border: none;
-    padding: 12px 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 0;
+    padding-right: 0;
     font-weight: 600;
     font-size: 13px;
     line-height: 13px;
   }
+    button a {
+      padding-top: inherit;
+      padding-bottom: inherit;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
   button.rounded {
     border-radius: 20px;

@@ -15,7 +15,7 @@
 
       <div class="call">
         <button class="contained rounded secondary">
-          More about what we do
+          <a href="#">More about what we do</a>
         </button>
       </div>
     </div>
@@ -48,7 +48,7 @@
 
   p {
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 30px;
   }
 

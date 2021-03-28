@@ -4,7 +4,11 @@
       {{what.title}}
     </h3>
     <p>{{what.text}}</p>
-    <button class="outlined rounded primary">Read more</button>
+    <button class="outlined rounded primary">
+      <a :href="what.link">
+        Read more
+      </a>
+    </button>
   </div>
 </template>
 

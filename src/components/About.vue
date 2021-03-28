@@ -12,7 +12,7 @@
         further afield.
       </p>
       <button class="outlined rounded secondary">
-        Learn more about us
+        <a href="#">Learn more about us</a>
       </button>
     </div>
   </section>
