@@ -2,7 +2,7 @@
   <Banner :banners="banners" />
   <About />
   <How />
-  <What :whats="whats" />
+  <What />
 </template>
 
 <script>
@@ -21,31 +21,6 @@
     },
     data() {
       return {
-        whats: [{
-            id: 1,
-            title: "Get online week",
-            text: "Lorem ipsum",
-            link: "/getonline"
-          },
-          {
-            id: 2,
-            title: "Learn my way",
-            text: "Lorem ipsum",
-            link: "/learn"
-          },
-          {
-            id: 3,
-            title: "Make it click",
-            text: "Lorem ipsum",
-            link: "/makeit"
-          },
-          {
-            id: 4,
-            title: "Digital you",
-            text: "Lorem ipsum",
-            link: "/digitalyou"
-          }
-        ],
         banners: [{
           id: 1,
           title: "Get online week 2021",

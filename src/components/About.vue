@@ -8,11 +8,10 @@
         We are a social change charity, helping people to improve their lives through digital.
       </h2>
       <p>
-        We tackle the pressing issues of our time, working with partners in thousands of communities across the UK and
-        further afield.
+        We tackle the pressing issues of our time, working with partners in thousands of communities across the UK and further afield.
       </p>
       <button class="outlined rounded secondary">
-        <router-link to="/learn">
+        <router-link to="/moreabout">
           Learn more about us
         </router-link>
       </button>

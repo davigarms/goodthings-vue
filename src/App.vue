@@ -64,6 +64,12 @@ export default {
     color: inherit;
   }
 
+  .empty {
+    background-color: #eee;
+    height: calc(100vh - 107px);
+    padding: 10px 50px;
+  }
+
   /* buttons */
   button {
     position: relative;

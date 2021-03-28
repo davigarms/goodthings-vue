@@ -5,34 +5,9 @@
         <router-link to="/"></router-link>
       </div>
       <ul class="nav">
-        <li>
-          <router-link to="/">
-            Home
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/what">
-            What we do
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/digitaldivide">
-            The digital divide
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/getinvolved">
-            Get involved
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/ournetwork">
-            Our network
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/insights">
-            Insights
+        <li v-for="menuitem in getMenuItems" :key="menuitem.id">
+          <router-link :to="menuitem.link">
+            {{menuitem.title}}
           </router-link>
         </li>
       </ul>
@@ -41,11 +16,11 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'NavBar',
-  props: {
-    
-  }
+  computed: mapGetters(['getMenuItems'])
 }
 </script>
 

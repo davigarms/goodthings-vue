@@ -8,7 +8,7 @@
         You might not have heard of us, but we're people behind the following impactful programmes.
       </p>
       <div class="content">
-        <div v-for="what in whats" :key="what.id">
+        <div v-for="what in getWhats" :key="what.id">
           <Box :what="what" />
         </div>
       </div>
@@ -26,13 +26,14 @@
 
 <script>
   import Box from './What/Box'
+  import { mapGetters } from 'vuex'
 
   export default {
     name: 'What',
     components: {
       Box
     },
-    props: ["whats"]
+    computed: mapGetters(['getWhats'])
   }
 </script>
 
