@@ -1,9 +1,9 @@
 <template>
   <div class="box">
     <h3>
-      {{title}}
+      {{what.title}}
     </h3>
-    <p>{{text}}</p>
+    <p>{{what.text}}</p>
     <button class="outlined rounded primary">Read more</button>
   </div>
 </template>
@@ -11,10 +11,7 @@
 <script>
   export default {
     name: "Box",
-    props: {
-      title: String,
-      text: String
-    }
+    props: ["what"]
   }
 </script>
 

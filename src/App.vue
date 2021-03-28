@@ -1,9 +1,9 @@
 <template>
   <Header />
-  <Banner />
+  <Banner :banners="banners" />
   <About />
   <How />
-  <What v-bind:whats="whats"/>
+  <What :whats="whats" />
 </template>
 
 <script>
@@ -24,8 +24,7 @@
     },
     data() {
       return {
-        whats: [
-          {
+        whats: [{
             id: 1,
             title: "Get online week",
             text: "Lorem ipsum",
@@ -49,7 +48,14 @@
             text: "Lorem ipsum",
             link: "http://"
           }
-        ]
+        ],
+        banners: [{
+          id: 1,
+          title: "Get online week 2021",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis elit lectus. Aliquam ac odio sit amet magna imperdiet.",
+          img: "banner.jpg",
+          link: "http://"
+        }]
       }
     }
   }
@@ -85,6 +91,11 @@
     background-color: #fff;
     position: relative;
     top: 107px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 
   .container {

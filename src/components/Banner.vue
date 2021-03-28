@@ -1,54 +1,56 @@
 <template>
-    <section class="banner">
-		<div class="img">
-			<img src="../assets/banner.jpg" alt="">
-		</div>
-		<div class="container">
-			<h2>Get online week 2021</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis elit lectus. Aliquam ac odio sit amet magna imperdiet.
-			</p>
-			<button class="contained rounded secondary">Get involved now!</button>
-		</div>
-	</section>
+  <section class="banner">
+    <div class="img">
+      <img :src="require(`@/assets/${banners[0].img}`)" alt="">
+    </div>
+    <div class="container">
+      <h2>{{banners[0].title}}</h2>
+      <p>
+        {{banners[0].text}}
+      </p>
+      <button class="contained rounded secondary">
+        <a href="">Get involved now!</a>
+      </button>
+    </div>
+  </section>
 </template>
 
 <script>
-export default {
-  name: 'Banner',
-  props: {
-    
+  export default {
+    name: 'Banner',
+    props: {
+      banners: Array
+    }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-.img {
+  .img {
     line-height: 0;
-}
-    .img img {
-        width: 100%;
-        display: block;
-    }
+  }
 
-.container {
+  .img img {
+    width: 100%;
+    display: block;
+  }
+
+  .container {
     position: absolute;
     width: initial;
     top: 61px;
     left: 59px;
-}
+  }
 
-h2 {
+  h2 {
     color: #fff;
     font-size: 56px;
     padding: 10px 15px 15px;
     background-color: #497c8f;
     margin: 0;
-}
+  }
 
-p {
+  p {
     margin: 16px 0;
     color: #497c8f;
     background-color: #fff;
@@ -56,6 +58,5 @@ p {
     font-size: 16px;
     padding: 18px 20px;
     width: 420px;
-}
-
+  }
 </style>

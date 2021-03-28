@@ -7,9 +7,9 @@
       <p>
         You might not have heard of us, but we're people behind the following impactful programmes.
       </p>
-      <div class="content" >
-        <div v-for="what in whats" v-bind:key="what.id">
-          <Box v-bind:title="what.title" v-bind:text="what.text" />
+      <div class="content">
+        <div v-for="what in whats" :key="what.id">
+          <Box :what="what" />
         </div>
       </div>
 

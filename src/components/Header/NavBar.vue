@@ -11,7 +11,6 @@
         <li>Insights</li>
       </ul>
     </div>
-  </div>
 </template>
 
 <script>
@@ -26,7 +25,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .logo {
-    background-image: url(../../assets/logo.png);
+    background-image: url(../assets/logo.png);
     width: 188px;
     height: 46px;
     display: inline-block;
