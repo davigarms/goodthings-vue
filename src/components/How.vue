@@ -61,5 +61,7 @@ p {
 
     .howform button {
         margin-left: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 </style>

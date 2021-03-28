@@ -8,14 +8,14 @@
       </div>
       <div class="buttons">
         <button class="underlined secondary">
-          <a href="#">
+          <router-link to="/learn">
             Learn
-          </a>
+          </router-link>
         </button>
         <button class="contained primary">
-          <a href="#">
+          <router-link to="/donate">
             Donate
-          </a>
+          </router-link>
         </button>
       </div>
     </div>

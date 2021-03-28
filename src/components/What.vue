@@ -15,7 +15,9 @@
 
       <div class="call">
         <button class="contained rounded secondary">
-          <a href="#">More about what we do</a>
+          <router-link to="/moreabout">
+            More about what we do
+          </router-link>
         </button>
       </div>
     </div>

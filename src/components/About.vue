@@ -12,7 +12,9 @@
         further afield.
       </p>
       <button class="outlined rounded secondary">
-        <a href="#">Learn more about us</a>
+        <router-link to="/learn">
+          Learn more about us
+        </router-link>
       </button>
     </div>
   </section>

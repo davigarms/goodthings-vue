@@ -2,38 +2,38 @@
   <div class="navbar">
     <div class="container">
       <div class="logo">
-        <a href="/"></a>
+        <router-link to="/"></router-link>
       </div>
       <ul class="nav">
         <li>
-          <a href="/">
+          <router-link to="/">
             Home
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#">
+          <router-link to="/what">
             What we do
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#">
+          <router-link to="/digitaldivide">
             The digital divide
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#">
+          <router-link to="/getinvolved">
             Get involved
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#">
+          <router-link to="/ournetwork">
             Our network
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#">
+          <router-link to="/insights">
             Insights
-          </a>
+          </router-link>
         </li>
       </ul>
     </div>

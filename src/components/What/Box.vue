@@ -5,9 +5,9 @@
     </h3>
     <p>{{what.text}}</p>
     <button class="outlined rounded primary">
-      <a :href="what.link">
+      <router-link :to="what.link">
         Read more
-      </a>
+      </router-link>
     </button>
   </div>
 </template>

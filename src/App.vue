@@ -1,68 +1,23 @@
 <template>
-  <Header />
-  <Banner :banners="banners" />
-  <About />
-  <How />
-  <What :whats="whats" />
+  <div id="nav">
+    <Header />
+  </div>
+  <router-view/>
 </template>
 
 <script>
-  import Header from './components/Header.vue'
-  import Banner from './components/Banner.vue'
-  import About from './components/About.vue'
-  import How from './components/How.vue'
-  import What from './components/What.vue'
+import Header from './components/Header.vue'
 
-  export default {
-    name: 'App',
-    components: {
-      Header,
-      Banner,
-      About,
-      How,
-      What
-    },
-    data() {
-      return {
-        whats: [{
-            id: 1,
-            title: "Get online week",
-            text: "Lorem ipsum",
-            link: "http://"
-          },
-          {
-            id: 2,
-            title: "Learn my way",
-            text: "Lorem ipsum",
-            link: "http://"
-          },
-          {
-            id: 3,
-            title: "Make it click",
-            text: "Lorem ipsum",
-            link: "http://"
-          },
-          {
-            id: 4,
-            title: "Digital you",
-            text: "Lorem ipsum",
-            link: "http://"
-          }
-        ],
-        banners: [{
-          id: 1,
-          title: "Get online week 2021",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis elit lectus. Aliquam ac odio sit amet magna imperdiet.",
-          img: "banner.jpg",
-          link: "http://"
-        }]
-      }
-    }
+export default {
+  name: "App",
+  components: {
+    Header
   }
+}
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
   * {
     box-sizing: border-box;
