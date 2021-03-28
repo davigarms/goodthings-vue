@@ -1,26 +1,123 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Header/>
+  <Banner/>
+  <About/>
+  <How/>
+  <What/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Banner from './components/Banner.vue'
+import About from './components/About.vue'
+import How from './components/How.vue'
+import What from './components/What.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Banner,
+    About,
+    How,
+    What
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #333;
+  background-color: #ddd;
+  padding-bottom: 107px;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, section {
+    width: 100%;
+    max-width: 1058px;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: #fff;
+    position: relative;
+    top: 107px;
+}
+
+.container {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+h2, h3 {
+  font-weight: 600;
+}
+
+/* buttons */
+button {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 12px 15px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+button.rounded {
+    border-radius: 20px;
+}
+
+    button.contained {
+        background-color: #ccc;
+        color: #222222;
+    }
+        button.contained.primary {
+            background-color: #be3249;
+            color: #fff;
+        }
+
+        button.contained.secondary {
+            background-color: #fff;
+            color: #be3249;
+        }
+
+    button.outlined {
+        border: 1px solid #ccc;
+    }
+        button.outlined.primary {
+            border: 1px solid #be3249;
+            color: #be3249;
+        }
+
+        button.outlined.secondary {
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+    button.underlined {
+        border-left: 1px #ccc solid;
+    }
+        button.underlined:after {
+            content: "";
+            background-color: #ccc;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+        }
+            button.underlined.secondary:after {
+                background-color: #3b7e71;
+                color: #3b7e71;
+            }
+
 </style>
