@@ -37,7 +37,6 @@
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .what {
     background-color: #487c8f;
