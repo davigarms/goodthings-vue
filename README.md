@@ -9,7 +9,7 @@ Technologies used:
 - Vuex
 - Vue Router
 
-[Check it out now](https://goodthings-foundation.github.io/)
+[Visit website now](https://goodthings-foundation.github.io/)
 
 
 ## Project setup
