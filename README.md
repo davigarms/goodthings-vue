@@ -1,4 +1,16 @@
-# goodthings-vue
+## GoodThings Foundation Vue.js
+
+![Home](screenshot-1.png)
+
+A template for the charity sector created with Vue.js
+
+Technologies used:
+- Vue.js
+- Vuex
+- Vue Router
+
+[Check it out now](https://goodthings-foundation.github.io/)
+
 
 ## Project setup
 ```
